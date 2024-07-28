@@ -15,16 +15,16 @@
 
 buildPythonPackage rec {
   pname = "mdformat-myst";
-  version = "0.1.5";
+  version = "0.1.6";
   pyproject = true;
 
   disabled = pythonOlder "3.7";
 
   src = fetchFromGitHub {
-    owner = "executablebooks";
+    owner = "kdeldycke";
     repo = "mdformat-myst";
-    rev = "v${version}";
-    hash = "sha256-soVVTQsK3axnqfmIphvz8JZCWTTyTinUtZ7I43Kte9s=";
+    rev = "e46ee9b82a26a39cd4fd30cb27fc9161c71dd44e";
+    hash = "sha256-B8RGwJsauqOxJPdqhOassTDgoGc+SUaB8Ols2KGDwP4=";
   };
 
   build-system = [ flit-core ];
@@ -44,7 +44,7 @@ buildPythonPackage rec {
 
   meta = with lib; {
     description = "Mdformat plugin for MyST compatibility";
-    homepage = "https://github.com/executablebooks/mdformat-myst";
+    homepage = "https://github.com/kdeldycke/mdformat-myst";
     license = licenses.mit;
     maintainers = with maintainers; [ MattKang ];
   };
