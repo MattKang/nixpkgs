@@ -4,6 +4,7 @@
   fetchFromGitHub,
   flit-core,
   mdformat,
+  mdformat-footnote,
   mdformat-frontmatter,
   mdformat-tables,
   mdit-py-plugins,
@@ -30,6 +31,7 @@ buildPythonPackage rec {
 
   dependencies = [
     mdformat
+    mdformat-footnote
     mdformat-frontmatter
     mdformat-tables
     mdit-py-plugins
